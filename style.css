@@ -1,0 +1,109 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg'); /* Set background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; /* All text will be white */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.full-screen-section {
+    min-height: 100vh;
+    margin-left: 20%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Aligns photo and text horizontally */
+    text-align: left;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center; /* Vertically aligns photo and text */
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px; /* Limits the width of the profile container */
+}
+
+.profile-container img {
+    width: 300px; /* Image size increased */
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 50px; /* Spacing between photo and text */
+    transition: transform 0.3s;
+}
+
+.profile-container img:hover {
+    transform: scale(1.1);
+}
+
+.profile-container p {
+    max-width: 600px;
+    font-size: 2.2rem;
+    line-height: 1.5;
+}
+
+.project, .styled-section {
+    background: linear-gradient(135deg, #42a5f5, #478ed1);
+    color: white;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    width: 80%;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    transition: background 0.3s;
+    border-radius: 10px;
+}
+
+body.dark-mode .project, body.dark-mode .styled-section {
+    background: linear-gradient(135deg, #3333cc, #9900cc);
+}
+
+.styled-section {
+    background: linear-gradient(135deg, #f57c00, #ffb300); /* Different color for other sections */
+}
+
+#contact{
+    background: linear-gradient(135deg, #f57c00, #921f6d);
+}
+
+#skills{
+    background: linear-gradient(135deg, #228d14, #78b185);
+    font-size: 1.5rem;
+}
